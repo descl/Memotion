@@ -1,10 +1,15 @@
 /*
  * Base structure
  */
+.glyphicon {
+  font-size: 2em;
+  margin-right: 15px;
+}
+
 .note {
   padding-left: 5px;
   padding-right: 5px;
-  background-color: #949494;
+  background-color: #BDEDFF;
   text-align: justify;
   border-radius: 5px;
   height: 100px;
@@ -14,7 +19,7 @@
 .image {
   padding-left: 5px;
   padding-right: 5px;
-  background-color: #949494;
+  background-color: #BDEDFF;
   text-align: justify;
   border-radius: 5px;
   height: 100px;
@@ -22,7 +27,7 @@
 }
 
 .popover{
-  width: 500px;
+  min-width: 400px;
 }
 
 
@@ -59,7 +64,7 @@ body {
     z-index: 1000;
     display: block;
     padding: 70px 20px 20px;
-    background-color: #f5f5f5;
+    background-color: #5F7680;
     border-right: 1px solid #eee;
   }
 }
