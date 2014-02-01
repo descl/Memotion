@@ -26,6 +26,17 @@
 
   <body>
 
+    <div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <iframe src="http://player.vimeo.com/video/83298446" style="margin-left: 30px;" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div class="modal-footer"> <a class="btn btn-info" data-dismiss="modal">Fermer</a> </div>
+        </div>
+      </div>
+    </div>
+
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -51,9 +62,9 @@
       <div class="row">
         <div class="col-sm-3 col-md-3 sidebar leftCollumn"> <!-- Colonne de gauche -->
 
-          <!--<div class="image" data-toggle="popover" data-placement="right" data-html="true" data-content='<div style="height: 315px; width: 560px;"><iframe width="560" height="315" src="http://www.youtube.com/embed/62Mx3IQrJAo" frameborder="0" allowfullscreen></iframe></div>'>
+          <div class="image" data-toggle="modal" data-target=".bs-modal-lg">
             <p>Some random video</p>
-          </div>-->
+          </div>
         </div>
 
         <div class="col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-3 main"> <!-- Colonne de droite -->

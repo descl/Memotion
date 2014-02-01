@@ -4,6 +4,7 @@ $(function() {
   addNote('Note grave fraiche', '31/01/2014 18h05', slipsum, 1);
   addImage('31/01/2014 18h05', 'the_egg_chair.jpg', 1)
   addNote('Note sympa quand même', '31/01/2014 18h25', 'Vivamus sagittis lacus vel augue laoreet rutrum faucibus.', 2);
+  addVideo('Scie scie la famille', '31/01/2014 18h05', 1);
 });
 
 function addNote(title, timestamp, text, i) {
@@ -25,4 +26,8 @@ function addImage(timestamp, image, i) {
     trigger: 'hover',
     html: true
   });
+}
+
+function addVideo(title, timestamp, i) {
+  $('.leftCollumn').append('<div class="video video' + i + '" data-toggle="modal" data-target=".bs-modal-lg"><h2>' + title + '</h2><p><span class="glyphicon glyphicon-film"></span>Vidéo filmée à ' + timestamp +'</p></div>');
 }
